@@ -10,8 +10,6 @@ With a deep passion for **network communication**, **radio/cellular technologies
 
 ## Contact
 
-Feel free to connect with me through the links below:
-
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/blakegrachek)
 <br>
 <a href="mailto:b.m.grachek@gmail.com">
