@@ -1,6 +1,3 @@
+theme: jekyll-theme-minimal
 title: Blake Grachek
-logo:
 description: Blake Grachek
-show_downloads: false
-google_analytics:
-remote_theme: pages-themes/minimal@v0.2.0
