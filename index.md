@@ -1,4 +1,4 @@
-## About
+## About Blake
 I'm a business information systems professional
 
 ## Contact
