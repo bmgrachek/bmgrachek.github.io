@@ -1,9 +1,19 @@
 ## About Blake
-A multidisciplinary systems specialist based in Minneapolis with experience in ERPs, IBM systems, mobile device management, and UI customization. Focus is on solving technological challenges and improving system efficiency across various platforms.
 
-Proficient in the languages and tools required to maintain and develop these systems.
+I'm a multidisciplinary systems specialist based in Minneapolis with a broad range of experience in **ERPs**, **IBM systems**, **mobile device management**, and **UI customization**. I focus on solving complex technological challenges and optimizing system efficiency across various platforms, ensuring they align with business needs.
 
-With a strong interest in network communication, radio/cellular technologies, system administration, and cybersecurity, staying current with developments in these areas is a key focus. Constantly learning and adapting to the evolving landscape of technology keeps things engaging.
+Skilled in the languages and tools necessary to both maintain and develop these systems, I thrive on making technology work seamlessly and effectively for the end users. 
+
+With a deep passion for **network communication**, **radio/cellular technologies**, **system administration**, and **cybersecurity**, I’m always staying up to date with the latest advancements. The dynamic nature of the tech world keeps me engaged, and I continuously adapt to new developments to stay ahead.
+
+---
 
 ## Contact
-[<img src="https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin" alt="LinkedIn" />](https://www.linkedin.com/in/blakegrachek)
+
+Feel free to connect with me through the links below:
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/blakegrachek)
+<br>
+<a href="mailto:b.m.grachek@gmail.com">
+    <img src="https://img.shields.io/badge/Email-b.m.grachek@gmail.com-blue?style=flat&logo=gmail&logoColor=white" alt="Email" />
+</a>
