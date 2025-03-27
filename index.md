@@ -1,10 +1,8 @@
-Blake Grachek, Minneapolis, MN
-==============================
 # About Blake
 
 I'm a multidisciplinary systems specialist based in Minneapolis with a broad range of experience in **ERPs**, **IBM systems**, **mobile device management**, and **UI customization**. I focus on solving complex technological challenges and optimizing system efficiency across various platforms, ensuring they align with business needs.
 
-Skilled in the languages and tools necessary to both maintain and develop these systems, I thrive on making technology work seamlessly and effectively for the end users. 
+Skilled in the languages and tools necessary to both maintain and develop these systems, I thrive on making technology work seamlessly and effectively for the end users.
 
 With a deep passion for **network communication**, **radio/cellular technologies**, **system administration**, and **cybersecurity**, I’m always staying up to date with the latest advancements. The dynamic nature of the tech world keeps me engaged, and I continuously adapt to new developments to stay ahead.
 
