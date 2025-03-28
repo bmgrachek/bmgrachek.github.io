@@ -9,7 +9,7 @@ Hi! I'm Blake Grachek, an IS Engineer and System Administrator at Hank’s Speci
 ## Experience
 ### IS Engineer and System Administrator  
 **Hank’s Specialties Inc**  
-*Sep 2021 - Present (3 yrs 7 mos)*  
+*Sep 2021 - Present*  
 Minneapolis, Minnesota  
 - Architecting, implementing, and maintaining business systems aligned with business operations.  
 - Designing and deploying hardware and supporting infrastructure.  
