@@ -1,5 +1,3 @@
-# You Found Blake
-
 ## About Me
 Hi! I'm Blake Grachek, an IS Engineer and System Administrator at Hank’s Specialties Inc. I specialize in business information systems, technology, and cybersecurity. As a graduate of Bethel University, I am passionate about optimizing IT infrastructure and improving business operations.
 
