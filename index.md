@@ -40,11 +40,3 @@ Minneapolis, Minnesota
 ## Education
 ### Bethel University  
 **Bachelor of Arts - BA, Innovation and Entrepreneurship**  
-
----
-
-## Volunteering
-- **English Second Language Teacher** – *Arrive Ministries*  
-- **Mathematics Tutor** – *Arrive Ministries*  
-
----
