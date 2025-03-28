@@ -1,15 +1,19 @@
 remote_theme: pages-themes/minimal@v0.2.0
+
+# Site Information
 title: "Blake Grachek"
-description: Multidisciplinary systems engineer based in Minneapolis
+author: "Blake Grachek"
+description: "Multidisciplinary systems engineer based in Minneapolis."
+
+# Plugins
 plugins:
-- jekyll-remote-theme
+  - jekyll-remote-theme
+
+# GitHub Settings
 github:
   is_user_page: false
-title: "My Portfolio"
-author: "Your Name"
-description: "A collection of my technical projects."
 
-# Navigation links (if supported by the theme)
+# Navigation Links
 header_pages:
   - index.md
-  - projects.md  # This ensures "Projects" appears in the site navigation.
+  - projects.md  # Adds "Projects" to the site navigation
