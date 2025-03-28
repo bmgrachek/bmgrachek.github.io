@@ -13,6 +13,7 @@ plugins:
 header_pages:
   - index.md
   - projects.md  # Adds "Projects" to the site navigation
+  
 # GitHub Settings
  github:
    is_user_page: false
