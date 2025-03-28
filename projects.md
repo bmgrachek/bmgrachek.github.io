@@ -6,7 +6,8 @@ permalink: /projects/
 
 # Technical Projects Portfolio
 [![About Me](https://img.shields.io/badge/About_Me-0A66C2?style=for-the-badge&logo=read-the-docs&logoColor=white)](/)
-------------------------------
+
+---------------------------------------------------------------------------------------------------------------------
 ## Staging Environment for Zebra MC93/94 Handheld Scanners  
 
 ### Overview  
