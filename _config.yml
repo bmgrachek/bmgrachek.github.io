@@ -2,16 +2,12 @@ remote_theme: pages-themes/minimal@v0.2.0
 
 # Site Information
 title: "Blake Grachek"
-author: "Blake Grachek"
 description: "Multidisciplinary systems engineer based in Minneapolis."
+author: "Blake Grachek"
 
 # Plugins
 plugins:
   - jekyll-remote-theme
-
-# GitHub Settings
-github:
-  is_user_page: false
 
 # Navigation Links
 header_pages:
