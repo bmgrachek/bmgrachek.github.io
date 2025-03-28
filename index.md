@@ -44,3 +44,4 @@ Minneapolis, Minnesota
 - **Technician ARL** – *Federal Communications Commission*  
 
 ---
+© 2025 Blake Grachek. All rights reserved.
