@@ -19,3 +19,25 @@ Designed and implemented a custom configuration for Zebra label printers to seam
 - **Vendor Tool Utilization:** Leveraged Zebra’s proprietary tools to build and fine-tune a tailored configuration that met the organization’s specific printing requirements.  
 - **Network & Deployment Optimization:** Configured the final units for network operation, ensuring seamless connectivity and reliable performance across multiple locations.  
 - **Enterprise Rollout & Maintenance:** Successfully deployed and continue to maintain these printers across 19+ service locations, monitoring performance and resolving any integration issues as they arise.  
+## Payment Processing System Modernization  
+
+**Overview:**  
+Led the transition from a legacy payment processing system to a modern, self-hosted solution, enhancing transaction reliability, security, and efficiency across all service locations. This project required close collaboration with the payment processing vendor to implement a fully integrated system, including hardware, software, and network infrastructure.  
+
+**Key Contributions:**  
+- **Self-Hosted Payment Infrastructure:** Designed and deployed a self-hosted payment processing environment, ensuring seamless operation across all service locations while maintaining compliance with vendor-specific network requirements.  
+- **Hardware & Software Integration:** Configured and optimized card reading devices, a secure web-based payment portal, and backend processing systems to facilitate both in-person and manual-entry transactions.  
+- **Testing & Deployment:** Conducted extensive testing and fine-tuning of all components to ensure smooth payment processing, minimizing downtime during the transition from the legacy system.  
+- **Ongoing Maintenance & Optimization:** Continuously monitor and refine system performance, troubleshooting issues and implementing improvements to maintain a reliable and efficient payment processing workflow.  
+## Windows Imaging & Workstation Deployment  
+
+**Overview:**  
+Designed, built, and deployed a dynamic Windows imaging solution to standardize and streamline workstation provisioning across the organization. This project involved architecting a flexible, virtualized environment capable of supporting multiple hardware generations while ensuring seamless integration with enterprise applications, security policies, and user-specific configurations.  
+
+**Key Contributions:**  
+- **Dynamic Windows Imaging Architecture:** Engineered a highly adaptable, hardware-agnostic Windows image that accommodates multiple workstation models. This eliminated compatibility issues, reduced deployment time, and ensured a uniform computing environment across all service locations.  
+- **Virtualized Build & Testing Environment:** Leveraged a controlled virtual environment to develop, refine, and rigorously test the image before deployment, allowing for rapid iteration, debugging, and long-term maintainability.  
+- **Automated Deployment & Configuration Management:** Implemented a structured deployment workflow to automate workstation setup, integrating essential commercial applications, security policies, and user-specific software configurations without requiring manual intervention.  
+- **Collaboration with Technical Support Vendor:** Coordinated with external technical support teams to ensure all software dependencies, licensing requirements, and user permissions were properly implemented, minimizing post-deployment troubleshooting.  
+- **Remote Workforce Enablement & Security Hardening:** Designed and integrated additional security layers, including VPN solutions and encrypted authentication protocols, to support remote users requiring secure access to IBM i operating system applications. Ensured compliance with organizational security standards while maintaining a seamless user experience.  
+- **Scalable Deployment & Ongoing Maintenance:** Successfully deployed and actively maintain workstations across multiple locations, refining configurations based on evolving business needs, security requirements, and performance benchmarks.  
