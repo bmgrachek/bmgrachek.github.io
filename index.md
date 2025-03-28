@@ -1,9 +1,9 @@
 ## About Me
 Hi! I'm Blake Grachek, an IS Engineer and System Administrator at Hank’s Specialties Inc. I specialize in business information systems, technology, and cybersecurity. As a graduate of Bethel University, I am passionate about optimizing IT infrastructure and improving business operations.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/blakegrachek/)  
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:b.m.grachek@gmail.com)  
-
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/blakegrachek/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:b.m.grachek@gmail.com)
+[![📂 Projects](https://img.shields.io/badge/Projects-2563EB?style=for-the-badge&logo=github&logoColor=white)](/projects/)  
 ---
 
 ## Experience
@@ -14,8 +14,6 @@ Minneapolis, Minnesota
 - Architecting, implementing, and maintaining business systems aligned with business operations.  
 - Designing and deploying hardware and supporting infrastructure.  
 - Strategically refining IT workflows and system efficiency.
-
-[![📂 Projects](https://img.shields.io/badge/Projects-2563EB?style=for-the-badge&logo=github&logoColor=white)](/projects/)  
 
 ---
 
