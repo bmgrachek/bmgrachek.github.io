@@ -5,3 +5,11 @@ plugins:
 - jekyll-remote-theme
 github:
   is_user_page: false
+title: "My Portfolio"
+author: "Your Name"
+description: "A collection of my technical projects."
+
+# Navigation links (if supported by the theme)
+header_pages:
+  - index.md
+  - projects.md  # This ensures "Projects" appears in the site navigation.
