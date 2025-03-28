@@ -12,8 +12,6 @@ Minneapolis, Minnesota
 - Designing and deploying hardware and supporting infrastructure.  
 - Strategically refining IT workflows and system efficiency.  
 
-[![📂 Projects](https://img.shields.io/badge/Projects-2563EB?style=for-the-badge&logo=github&logoColor=white)](projects.md)  
-
 ---
 
 ## Skills
