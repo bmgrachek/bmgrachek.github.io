@@ -39,4 +39,6 @@ Minneapolis, Minnesota
 
 ## Education
 ### Bethel University  
-**Bachelor of Arts - BA, Innovation and Entrepreneurship**  
+**Bachelor of Arts - BA**, Innovation and Entrepreneurship 
+
+ ---
