@@ -1,6 +1,6 @@
 remote_theme: pages-themes/minimal@v0.2.0
 title: "Blake Grachek"
-description: A multidisciplinary systems engineer based in Minneapolis
+description: Multidisciplinary systems engineer based in Minneapolis
 plugins:
 - jekyll-remote-theme
 github:
