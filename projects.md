@@ -5,7 +5,7 @@ permalink: /projects/
 ---
 
 # Technical Projects Portfolio
-
+------------------------------
 ## Staging Environment for Zebra MC93/94 Handheld Scanners  
 
 ### Overview  
