@@ -3,7 +3,7 @@ layout: default
 title: Projects
 permalink: /projects/
 ---
-[![About Me](https://img.shields.io/badge/About_Me-0A66C2?style=for-the-badge&logo=read-the-docs&logoColor=white)](https://bmgrachek.github.io/)
+[![About Me](https://img.shields.io/badge/About_Me-0A66C2?style=for-the-badge&logo=read-the-docs&logoColor=white)](/)
 
 # Technical Projects Portfolio
 ------------------------------
