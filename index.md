@@ -10,29 +10,9 @@ Hi! I'm Blake Grachek, an IS Engineer and System Administrator at Hank’s Speci
 **Hank’s Specialties Inc**  
 *Sep 2021 - Present (3 yrs 7 mos)*  
 Minneapolis, Minnesota  
-- Construction, management, and maintenance of business systems aligned with business operations.  
-- Deployment of hardware and other supporting infrastructure.  
-- Optimization of IT workflows and system efficiency.  
-
----
-
-## Education
-### Bethel University  
-**Bachelor of Arts - BA, Innovation and Entrepreneurship**  
-
----
-
-## Licenses & Certifications
-- **Fortinet Network Security Expert Level 3, 2, and 1: Certified Associate** – *Fortinet*  
-- **General Mobile Radio Service** – *Federal Communications Commission*  
-- **ISO/IEC 27001 Information Security Associate** – *SkillFront*  
-- **Technician ARL** – *Federal Communications Commission*  
-
----
-
-## Volunteering
-- **English Second Language Teacher** – *Arrive Ministries*  
-- **Mathematics Tutor** – *Arrive Ministries*  
+- Architecting, implementing, and maintaining business systems aligned with business operations.  
+- Designing and deploying hardware and supporting infrastructure.  
+- Strategically refining IT workflows and system efficiency.  
 
 ---
 
@@ -44,6 +24,26 @@ Minneapolis, Minnesota
 - Information Security & Compliance (ISO/IEC 27001)  
 - Radio Communication (FCC Licensed)  
 - Network Security (Fortinet Certified)  
+
+---
+
+## Licenses & Certifications
+- **Fortinet Network Security Expert Level 3, 2, and 1: Certified Associate** – *Fortinet*  
+- **General Mobile Radio Service** – *Federal Communications Commission*  
+- **ISO/IEC 27001 Information Security Associate** – *SkillFront*  
+- **Technician ARL** – *Federal Communications Commission*  
+
+---
+
+## Education
+### Bethel University  
+**Bachelor of Arts - BA, Innovation and Entrepreneurship**  
+
+---
+
+## Volunteering
+- **English Second Language Teacher** – *Arrive Ministries*  
+- **Mathematics Tutor** – *Arrive Ministries*  
 
 ---
 
