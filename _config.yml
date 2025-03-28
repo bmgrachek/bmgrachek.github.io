@@ -1,3 +1,4 @@
+# Theme
 remote_theme: pages-themes/minimal@v0.2.0
 
 # Site Information
@@ -13,8 +14,8 @@ plugins:
 header_pages:
   - index.md
   - projects.md  # Adds "Projects" to the site navigation
-  
+
 # GitHub Settings
- github:
-   is_user_page: false
- 
+github:
+  is_user_page: false
+
