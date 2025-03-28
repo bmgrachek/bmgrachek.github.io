@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Technical Projects Portfolio"
+title: Projects
 permalink: /projects/
 ---
 
