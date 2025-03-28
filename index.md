@@ -29,6 +29,14 @@ Minneapolis, Minnesota
 
 ---
 
+
+## Education
+### Bethel University  
+**Bachelor of Arts - BA**, Innovation and Entrepreneurship 
+
+---
+
+
 ## Licenses & Certifications
 - **Fortinet Network Security Expert Level 3, 2, and 1: Certified Associate** – *Fortinet*  
 - **General Mobile Radio Service** – *Federal Communications Commission*  
@@ -36,9 +44,3 @@ Minneapolis, Minnesota
 - **Technician ARL** – *Federal Communications Commission*  
 
 ---
-
-## Education
-### Bethel University  
-**Bachelor of Arts - BA**, Innovation and Entrepreneurship 
-
- ---
