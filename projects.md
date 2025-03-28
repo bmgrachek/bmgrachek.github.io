@@ -77,4 +77,4 @@ Developed a custom Remote Desktop Protocol (RDP) environment and a specialized P
 - **Continuous Maintenance & Update Strategy** – Established a structured update and maintenance workflow, ensuring ongoing system optimization, reliability, and adaptability to future business requirements.  
 
 ---
-
+© 2025 Blake Grachek. All rights reserved.
