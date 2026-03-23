@@ -1,21 +1,20 @@
-# Theme
-remote_theme: pages-themes/minimal@v0.2.0
+---
+layout: default
+title: RDP Environment & POS System Deployment
+permalink: /projects/rdp-pos/
+---
 
-# Site Information
-title: "Blake Grachek"
-description: "Multidisciplinary systems engineer based in Minneapolis."
-author: "Blake Grachek"
+<a href="/projects/" class="back-link">← Back to projects</a>
 
-# Plugins
-plugins:
-  - jekyll-remote-theme
+<div class="detail-title">RDP Environment & POS System Deployment</div>
 
-# Navigation Links
-header_pages:
-  - index.md
-  - projects.md  # Adds "Projects" to the site navigation
+<div class="detail-tags">
+  <span class="detail-tag">Windows IoT</span>
+  <span class="detail-tag">IBM iSeries</span>
+  <span class="detail-tag">RDP</span>
+</div>
 
-# GitHub Settings
-github:
-  is_user_page: false
-
+<div class="detail-body">
+  <p>Engineered a custom RDP environment alongside a technical support vendor and built out a specialized POS system integrated with an IBM i backend. Designed a locked-down Windows IoT image for POS terminals to ensure secure transactions and system integrity. Configured real-time data sync between the POS systems and IBM i, and implemented strict security policies to minimize attack surfaces and meet compliance requirements. Updated the POS infrastructure to align with a new payment processing system and built a structured maintenance workflow to keep everything running long-term.</p>
+  <div class="sec-flag">Hardware withheld for security.</div>
+</div>

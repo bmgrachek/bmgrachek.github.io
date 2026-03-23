@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} — {% endif %}Blake Grachek</title>
+  <meta name="description" content="IS Engineer and System Administrator based in Minneapolis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0e0f11;
+      --bg-2: #13141a;
+      --bg-3: #161820;
+      --border: #1f2128;
+      --border-2: #2a2d35;
+      --text-1: #eceef1;
+      --text-2: #c9cdd4;
+      --text-3: #6b7280;
+      --text-4: #555a65;
+      --text-5: #363a45;
+      --text-6: #3d4250;
+      --accent: #7eb8f7;
+      --accent-bg: #0d1e30;
+      --accent-border: #1d3a5c;
+      --mono: 'IBM Plex Mono', monospace;
+      --sans: 'IBM Plex Sans', sans-serif;
+    }
+
+    html, body { height: 100%; }
+
+    body {
+      background: var(--bg);
+      color: var(--text-2);
+      font-family: var(--mono);
+      font-size: 14px;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* TOPBAR */
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 40px;
+      border-bottom: 0.5px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      z-index: 100;
+    }
+
+    .logo-block { display: flex; flex-direction: column; gap: 2px; }
+    .logo { font-size: 13px; font-weight: 500; color: var(--text-1); letter-spacing: 0.04em; }
+    .logo-sub { font-size: 10px; color: var(--text-4); letter-spacing: 0.1em; text-transform: uppercase; }
+
+    .nav { display: flex; gap: 6px; }
+    .nav a {
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 3px;
+      border: 0.5px solid transparent;
+      color: var(--text-4);
+      transition: all 0.15s;
+    }
+    .nav a:hover { color: var(--text-2); border-color: var(--border); }
+    .nav a.active { color: var(--text-1); border-color: var(--border-2); background: var(--bg-3); }
+
+    /* LAYOUT */
+    .site-body { display: flex; flex: 1; }
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 260px;
+      min-width: 260px;
+      border-right: 0.5px solid var(--border);
+      padding: 36px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      position: sticky;
+      top: 53px;
+      height: calc(100vh - 53px);
+      overflow-y: auto;
+    }
+
+    .section-label {
+      font-size: 9px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--text-5);
+      margin-bottom: 14px;
+    }
+
+    /* STATS */
+    .stat-row { display: flex; flex-direction: column; gap: 10px; }
+    .stat-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-bottom: 10px;
+      border-bottom: 0.5px solid var(--border);
+    }
+    .stat-label { font-size: 10px; color: var(--text-4); letter-spacing: 0.08em; text-transform: uppercase; }
+    .stat-val { font-size: 20px; font-weight: 500; color: var(--text-1); }
+    .stat-unit { font-size: 10px; color: var(--text-4); margin-left: 2px; }
+
+    /* STACK */
+    .stack-tier { display: flex; flex-direction: column; gap: 8px; }
+    .tier-label { font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-5); margin-bottom: 4px; }
+    .pill-group { display: flex; flex-wrap: wrap; gap: 5px; }
+    .pill {
+      font-size: 10px;
+      padding: 3px 8px;
+      border: 0.5px solid var(--border);
+      border-radius: 2px;
+      color: var(--text-4);
+      letter-spacing: 0.03em;
+    }
+    .pill.lit { color: var(--accent); border-color: var(--accent-border); background: var(--accent-bg); }
+    .pill.dim { color: var(--text-6); border-color: #1a1c22; }
+
+    /* CERTS */
+    .cert-list { display: flex; flex-direction: column; gap: 8px; }
+    .cert-item {
+      font-size: 11px;
+      color: var(--text-4);
+      line-height: 1.5;
+      padding-left: 10px;
+      border-left: 1px solid var(--border);
+    }
+
+    /* MAIN CONTENT */
+    .main { flex: 1; padding: 48px 56px; max-width: 860px; }
+
+    /* HOME PAGE */
+    .hero { margin-bottom: 48px; }
+    .hero-name {
+      font-size: 32px;
+      font-weight: 500;
+      color: var(--text-1);
+      letter-spacing: -0.02em;
+      font-family: var(--sans);
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+    .hero-role {
+      font-size: 11px;
+      color: var(--text-4);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .hero-bio {
+      font-size: 13px;
+      line-height: 1.9;
+      color: var(--text-3);
+      font-family: var(--sans);
+      max-width: 500px;
+      margin-bottom: 24px;
+    }
+    .link-row { display: flex; gap: 10px; }
+    .link-btn {
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 7px 16px;
+      border: 0.5px solid var(--border);
+      border-radius: 2px;
+      color: var(--text-4);
+      cursor: pointer;
+      background: transparent;
+      transition: all 0.15s;
+      font-family: var(--mono);
+    }
+    .link-btn:hover { color: var(--text-1); border-color: var(--border-2); }
+
+    .divider { border: none; border-top: 0.5px solid var(--border); margin: 40px 0; }
+
+    .exp-entry { display: grid; grid-template-columns: 140px 1fr; gap: 24px; margin-bottom: 32px; }
+    .exp-date { font-size: 10px; color: var(--text-5); letter-spacing: 0.06em; padding-top: 2px; line-height: 1.6; }
+    .exp-role { font-size: 13px; font-weight: 500; color: var(--text-2); margin-bottom: 3px; }
+    .exp-org { font-size: 11px; color: var(--text-4); margin-bottom: 8px; }
+    .exp-desc { font-size: 12px; color: var(--text-4); line-height: 1.75; font-family: var(--sans); }
+
+    /* PROJECTS PAGE */
+    .proj-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+    .proj-count { font-size: 10px; color: var(--text-5); letter-spacing: 0.1em; }
+
+    .proj-list { display: flex; flex-direction: column; }
+    .proj-item {
+      display: grid;
+      grid-template-columns: 40px 1fr auto;
+      gap: 24px;
+      align-items: start;
+      padding: 28px 0;
+      border-bottom: 0.5px solid var(--border);
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.1s;
+    }
+    .proj-item:first-child { border-top: 0.5px solid var(--border); }
+    .proj-item:hover .proj-name { color: var(--text-1); }
+    .proj-num { font-size: 10px; color: var(--text-5); padding-top: 2px; }
+    .proj-name {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-3);
+      transition: color 0.15s;
+      margin-bottom: 8px;
+    }
+    .proj-blurb { font-size: 12px; color: var(--text-6); line-height: 1.65; font-family: var(--sans); }
+    .proj-tags { display: flex; flex-direction: column; align-items: flex-end; gap: 5px; padding-top: 2px; }
+    .proj-tag { font-size: 9px; color: var(--text-5); letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; }
+
+    /* DETAIL PAGE */
+    .back-link {
+      display: inline-block;
+      font-size: 10px;
+      color: var(--text-5);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 36px;
+      transition: color 0.15s;
+    }
+    .back-link:hover { color: var(--text-3); }
+
+    .detail-title {
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--text-1);
+      font-family: var(--sans);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    .detail-tags { display: flex; gap: 6px; margin-bottom: 32px; flex-wrap: wrap; }
+    .detail-tag {
+      font-size: 9px;
+      color: var(--accent);
+      border: 0.5px solid var(--accent-border);
+      background: var(--accent-bg);
+      border-radius: 2px;
+      padding: 3px 9px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .detail-body {
+      font-size: 13px;
+      line-height: 2;
+      color: var(--text-3);
+      font-family: var(--sans);
+      max-width: 640px;
+    }
+    .sec-flag {
+      display: inline-block;
+      margin-top: 24px;
+      font-size: 10px;
+      color: var(--text-5);
+      border: 0.5px solid var(--border);
+      padding: 5px 12px;
+      border-radius: 2px;
+      letter-spacing: 0.08em;
+      font-family: var(--mono);
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 20px 40px;
+      border-top: 0.5px solid var(--border);
+      font-size: 10px;
+      color: var(--text-5);
+      letter-spacing: 0.06em;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .topbar { padding: 14px 20px; }
+      .site-body { flex-direction: column; }
+      .sidebar { position: static; width: 100%; height: auto; border-right: none; border-bottom: 0.5px solid var(--border); padding: 24px 20px; flex-direction: row; flex-wrap: wrap; gap: 24px; }
+      .main { padding: 32px 20px; }
+      .exp-entry { grid-template-columns: 1fr; gap: 6px; }
+      .proj-item { grid-template-columns: 32px 1fr; }
+      .proj-tags { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="logo-block">
+      <div class="logo">Blake Grachek</div>
+      <div class="logo-sub">Minneapolis, MN</div>
+    </div>
+    <nav class="nav">
+      <a href="/" class="{% if page.url == '/' %}active{% endif %}">About</a>
+      <a href="/projects/" class="{% if page.url contains 'projects' %}active{% endif %}">Projects</a>
+    </nav>
+  </header>
+
+  <div class="site-body">
+    <aside class="sidebar">
+      <div>
+        <div class="section-label">At a glance</div>
+        <div class="stat-row">
+          <div class="stat-item">
+            <span class="stat-label">Locations</span>
+            <span class="stat-val">20<span class="stat-unit">+</span></span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Years active</span>
+            <span class="stat-val">4<span class="stat-unit">yr</span></span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Projects</span>
+            <span class="stat-val">5</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stack-tier">
+        <div class="tier-label">Platforms & Systems</div>
+        <div class="pill-group">
+          <span class="pill lit">Windows 10/11 Enterprise</span>
+          <span class="pill lit">Windows Server</span>
+          <span class="pill lit">Windows IoT</span>
+          <span class="pill lit">IBM iSeries / AS400</span>
+          <span class="pill lit">Android Enterprise</span>
+          <span class="pill lit">Zebra StageNow</span>
+          <span class="pill lit">MDM</span>
+          <span class="pill lit">Active Directory</span>
+          <span class="pill lit">Group Policy</span>
+          <span class="pill lit">Hyper-V</span>
+        </div>
+      </div>
+
+      <div class="stack-tier">
+        <div class="tier-label">Infrastructure & Security</div>
+        <div class="pill-group">
+          <span class="pill dim">Zero-Touch Provisioning</span>
+          <span class="pill dim">Network Security</span>
+          <span class="pill dim">Fortinet NSE</span>
+          <span class="pill dim">VPN</span>
+          <span class="pill dim">RDP</span>
+          <span class="pill dim">Serial / WAN</span>
+          <span class="pill dim">DHCP / DNS</span>
+          <span class="pill dim">TCP/IP</span>
+          <span class="pill dim">ISO/IEC 27001</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-label">Certifications</div>
+        <div class="cert-list">
+          <div class="cert-item">Fortinet NSE 1–3</div>
+          <div class="cert-item">ISO/IEC 27001 Associate</div>
+          <div class="cert-item">FCC General Mobile Radio</div>
+          <div class="cert-item">FCC Technician ARL</div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      {{ content }}
+    </main>
+  </div>
+
+  <footer>
+    © 2025 Blake Grachek. All rights reserved.
+  </footer>
+
+</body>
+</html>
