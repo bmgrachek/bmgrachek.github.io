@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #0e0f11;
+      color: #e4e4e7;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    a {
+      color: #7eb8f7;
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+
+    /* Topbar */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: #0e0f11;
+      border-bottom: 1px solid #1e1f23;
+      padding: 0 2rem;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .topbar-brand {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #a1a1aa;
+    }
+
+    .topbar-nav {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .topbar-nav a {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #71717a;
+      transition: color 0.2s ease;
+    }
+
+    .topbar-nav a:hover,
+    .topbar-nav a.active {
+      color: #7eb8f7;
+      opacity: 1;
+    }
+
+    /* Layout */
+    .layout {
+      display: flex;
+      min-height: calc(100vh - 60px);
+    }
+
+    /* Sidebar */
+    .sidebar {
+      position: sticky;
+      top: 60px;
+      width: 260px;
+      flex-shrink: 0;
+      height: calc(100vh - 60px);
+      overflow-y: auto;
+      padding: 2rem 1.5rem;
+      border-right: 1px solid #1e1f23;
+      background-color: #0e0f11;
+    }
+
+    .sidebar-section {
+      margin-bottom: 2rem;
+    }
+
+    .sidebar-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .sidebar-title {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #52525b;
+      margin-bottom: 0.75rem;
+    }
+
+    /* Stats */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-value {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #e4e4e7;
+    }
+
+    .stat-label {
+      font-size: 0.6875rem;
+      color: #71717a;
+    }
+
+    /* Pills */
+    .pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.375rem;
+    }
+
+    .pill {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.6875rem;
+      font-weight: 500;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    .pill-accent {
+      background-color: rgba(126, 184, 247, 0.15);
+      color: #7eb8f7;
+    }
+
+    .pill-dim {
+      background-color: rgba(113, 113, 122, 0.15);
+      color: #71717a;
+    }
+
+    /* Certifications */
+    .cert-list {
+      list-style: none;
+    }
+
+    .cert-list li {
+      font-size: 0.8125rem;
+      color: #a1a1aa;
+      padding: 0.25rem 0;
+      border-bottom: 1px solid #1e1f23;
+    }
+
+    .cert-list li:last-child {
+      border-bottom: none;
+    }
+
+    /* Main Content */
+    .main {
+      flex: 1;
+      padding: 3rem 4rem;
+      max-width: 900px;
+    }
+
+    /* Hero */
+    .hero {
+      margin-bottom: 2rem;
+    }
+
+    .hero-name {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #fafafa;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-role {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.875rem;
+      color: #7eb8f7;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-bio {
+      font-size: 1.0625rem;
+      color: #a1a1aa;
+      line-height: 1.7;
+      max-width: 600px;
+      margin-bottom: 1.5rem;
+    }
+
+    .link-row {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .link-btn {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.875rem;
+      font-weight: 500;
+      padding: 0.625rem 1.25rem;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .link-btn:first-child {
+      background-color: #7eb8f7;
+      color: #0e0f11;
+    }
+
+    .link-btn:first-child:hover {
+      background-color: #9ac7f9;
+      opacity: 1;
+    }
+
+    .link-btn:last-child {
+      background-color: transparent;
+      border: 1px solid #3f3f46;
+      color: #e4e4e7;
+    }
+
+    .link-btn:last-child:hover {
+      border-color: #7eb8f7;
+      color: #7eb8f7;
+      opacity: 1;
+    }
+
+    /* Divider */
+    .divider {
+      border: none;
+      border-top: 1px solid #1e1f23;
+      margin: 2.5rem 0;
+    }
+
+    /* Section Label */
+    .section-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #52525b;
+      margin-bottom: 1.25rem;
+    }
+
+    /* Experience Entry */
+    .exp-entry {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .exp-entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .exp-date {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.8125rem;
+      color: #71717a;
+      min-width: 140px;
+      flex-shrink: 0;
+    }
+
+    .exp-role {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fafafa;
+      margin-bottom: 0.25rem;
+    }
+
+    .exp-org {
+      font-size: 0.875rem;
+      color: #7eb8f7;
+      margin-bottom: 0.5rem;
+    }
+
+    .exp-desc {
+      font-size: 0.9375rem;
+      color: #a1a1aa;
+      line-height: 1.6;
+    }
+
+    /* Projects List */
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .project-row {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1.25rem 1.5rem;
+      background-color: #16171a;
+      border: 1px solid #1e1f23;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .project-row:hover {
+      border-color: #7eb8f7;
+      background-color: #1a1b1f;
+      opacity: 1;
+    }
+
+    .project-num {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #52525b;
+      min-width: 2rem;
+    }
+
+    .project-title {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #e4e4e7;
+      flex: 1;
+    }
+
+    .project-arrow {
+      font-size: 1rem;
+      color: #52525b;
+      transition: color 0.2s ease;
+    }
+
+    .project-row:hover .project-arrow {
+      color: #7eb8f7;
+    }
+
+    /* Project Detail */
+    .project-header {
+      margin-bottom: 2rem;
+    }
+
+    .project-header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fafafa;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-meta {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.875rem;
+      color: #71717a;
+    }
+
+    .project-content {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #a1a1aa;
+    }
+
+    .project-content h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #fafafa;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-content h3 {
+      font-size: 1.0625rem;
+      font-weight: 600;
+      color: #e4e4e7;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .project-content p {
+      margin-bottom: 1rem;
+    }
+
+    .project-content ul,
+    .project-content ol {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+    }
+
+    .project-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .project-content strong {
+      color: #e4e4e7;
+      font-weight: 600;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.875rem;
+      color: #71717a;
+      margin-bottom: 2rem;
+    }
+
+    .back-link:hover {
+      color: #7eb8f7;
+      opacity: 1;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 2rem 0;
+      margin-top: 4rem;
+      border-top: 1px solid #1e1f23;
+    }
+
+    .footer-text {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.75rem;
+      color: #52525b;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #0e0f11;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #27272a;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #3f3f46;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .sidebar {
+        display: none;
+      }
+
+      .main {
+        padding: 2rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .topbar {
+        padding: 0 1rem;
+      }
+
+      .topbar-brand {
+        font-size: 0.75rem;
+      }
+
+      .topbar-nav {
+        gap: 1rem;
+      }
+
+      .topbar-nav a {
+        font-size: 0.75rem;
+      }
+
+      .main {
+        padding: 1.5rem;
+      }
+
+      .hero-name {
+        font-size: 1.75rem;
+      }
+
+      .exp-entry {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .exp-date {
+        min-width: auto;
+      }
+
+      .link-row {
+        flex-direction: column;
+      }
+
+      .link-btn {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-brand">Blake Grachek / Minneapolis, MN</div>
+    <nav class="topbar-nav">
+      <a href="/" {% if page.url == "/" %}class="active"{% endif %}>About</a>
+      <a href="/projects/" {% if page.url contains "/projects" %}class="active"{% endif %}>Projects</a>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-title">At a Glance</div>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-value">20+</div>
+            <div class="stat-label">Locations</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">4yr</div>
+            <div class="stat-label">Years active</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">5</div>
+            <div class="stat-label">Projects</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-title">Platforms & Systems</div>
+        <div class="pills">
+          <span class="pill pill-accent">Windows 10/11 Enterprise</span>
+          <span class="pill pill-accent">Windows Server</span>
+          <span class="pill pill-accent">Windows IoT</span>
+          <span class="pill pill-accent">IBM iSeries / AS400</span>
+          <span class="pill pill-accent">Android Enterprise</span>
+          <span class="pill pill-accent">Zebra StageNow</span>
+          <span class="pill pill-accent">MDM</span>
+          <span class="pill pill-accent">Active Directory</span>
+          <span class="pill pill-accent">Group Policy</span>
+          <span class="pill pill-accent">Hyper-V</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-title">Infrastructure & Security</div>
+        <div class="pills">
+          <span class="pill pill-dim">Zero-Touch Provisioning</span>
+          <span class="pill pill-dim">Network Security</span>
+          <span class="pill pill-dim">Fortinet NSE</span>
+          <span class="pill pill-dim">VPN</span>
+          <span class="pill pill-dim">RDP</span>
+          <span class="pill pill-dim">Serial / WAN</span>
+          <span class="pill pill-dim">DHCP / DNS</span>
+          <span class="pill pill-dim">TCP/IP</span>
+          <span class="pill pill-dim">ISO/IEC 27001</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-title">Certifications</div>
+        <ul class="cert-list">
+          <li>Fortinet NSE 1-3</li>
+          <li>ISO/IEC 27001 Associate</li>
+          <li>FCC General Mobile Radio</li>
+          <li>FCC Technician ARL</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main">
+      {{ content }}
+
+      <footer class="footer">
+        <p class="footer-text">&copy; 2025 Blake Grachek. All rights reserved.</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
