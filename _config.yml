@@ -1,3 +1,6 @@
 title: Blake Grachek
-description: IS Engineer and System Administrator based in Minneapolis.
+description: Work in progress.
 author: Blake Grachek
+exclude:
+  - projects.md
+  - projects
