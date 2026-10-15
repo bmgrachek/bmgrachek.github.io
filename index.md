@@ -14,4 +14,4 @@ title: Blake Grachek
 </blockquote>
 <p>
 <p>
-<p class="copyright">&copy; 2020 Blake Grachek. All rights reserved.</p>
+
