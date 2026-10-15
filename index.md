@@ -17,3 +17,4 @@ title: Blake Grachek
   <p>For this reason the Father loves me, because I lay down my life in order to take it up again. No one takes it from me, but I lay it down of my own accord. I have power to lay it down, and I have power to take it up again. I have received this command from my Father.”</p>
   <cite>Jn 10:11-18</cite>
 </blockquote>
+<p class="copyright">&copy; 2026 Blake Grachek. All rights reserved and stuff.</p>
