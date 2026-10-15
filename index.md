@@ -8,7 +8,7 @@ title: Blake Grachek
   .scripture cite { display: block; margin-top: 1.25rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; font-style: normal; letter-spacing: 0.08em; text-transform: uppercase; color: #6b6b75; }
 </style>
 <div class="name">Blake Grachek, Business Systems and stuff.</div>
-<h1>Thanks for creepin'...</h1>
+<h1>Thanks for creepin, but my projects are now unpublished.</h1>
 <p>Employers, professors, and old coaches, connect with me on <a href="https://www.linkedin.com/in/blakegrachek/" target="_blank" rel="noopener">LinkedIn</a>.</p>
 <blockquote class="scripture">
   <p>“I am the good shepherd. The good shepherd lays down his life for the sheep. The hired hand, who is not the shepherd and does not own the sheep, sees the wolf coming and leaves the sheep and runs away—and the wolf snatches them and scatters them. The hired hand runs away because a hired hand does not care for the sheep.</p>
