@@ -7,7 +7,7 @@ title: Blake Grachek
   .scripture p { margin-bottom: 1rem; font-style: italic; }
   .scripture cite { display: block; margin-top: 1.25rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; font-style: normal; letter-spacing: 0.08em; text-transform: uppercase; color: #6b6b75; }
 </style>
-<div class="name">Blake Grachek, Systems and stuff.</div>
+<div class="name">Blake Grachek, Business Systems and stuff.</div>
 <h1>Thanks for creepin'...</h1>
 <p>Employers, professors, and old coaches, connect with me on <a href="https://www.linkedin.com/in/blakegrachek/" target="_blank" rel="noopener">LinkedIn</a>.</p>
 <blockquote class="scripture">
