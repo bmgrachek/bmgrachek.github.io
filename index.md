@@ -2,12 +2,7 @@
 layout: placeholder
 title: Blake Grachek
 ---
-<style>
-  .scripture { margin-top: 3.5rem; padding-left: 1.25rem; border-left: 2px solid #3f4a5a; font-family: Georgia, 'Times New Roman', serif; font-size: 0.9rem; line-height: 1.85; color: #8b8b94; }
-  .scripture p { margin-bottom: 1rem; font-style: italic; }
-  .scripture cite { display: block; margin-top: 1.25rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; font-style: normal; letter-spacing: 0.08em; text-transform: uppercase; color: #6b6b75; }
-</style>
-<div class="name">Blake Grachek, Business Systems and stuff.</div>
+<style> .scripture { margin-top: 3.5rem; padding-left: 1.25rem; border-left: 2px solid #3f4a5a; font-family: Georgia, 'Times New Roman', serif; font-size: 0.9rem; line-height: 1.85; color: #8b8b94; } .scripture p { margin-bottom: 1rem; font-style: italic; } .scripture cite { display: block; margin-top: 1.25rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; font-style: normal; letter-spacing: 0.08em; text-transform: uppercase; color: #6b6b75; } </style> <div class="name">Blake Grachek, Business Systems and stuff.</div>
 <h1>Thanks for creepin', but I don't publish work projects anymore.</h1>
 <p>Employers, professors, and old coaches, connect with me on <a href="https://www.linkedin.com/in/blakegrachek/" target="_blank" rel="noopener">LinkedIn</a>.</p>
 <blockquote class="scripture">
