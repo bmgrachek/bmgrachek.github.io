@@ -19,4 +19,4 @@ title: Blake Grachek
 </blockquote>
 <p>
 <p>
-<p class="copyright">&copy; 2026 Blake Grachek. All rights reserved and stuff.</p>
+<p class="copyright">&copy; 2020 Blake Grachek. All rights reserved.</p>
